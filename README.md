@@ -14,6 +14,9 @@ conda create -n APrompt4EM python=3.8.5
 conda activate APrompt4EM
 pip install -r requirements.txt
 ```
+Please note that you **do not** need to install `OpenPrompt` using `pip` manually because we have modified parts of the code. Our implementation of the Contextualized Soft Token Model can be found in `./openprompt/prompts/ptuning_prompts.py`.
+
+
 
 ### Datasets
 
