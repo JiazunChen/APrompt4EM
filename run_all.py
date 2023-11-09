@@ -3,7 +3,7 @@ datename = 'all'
 query_sizes = [1,2,4,8]
 num_att_layers = [1,2,3]
 head_nums  = [1,2,4,8]
-'''
+
  
 for seed in range(3):
     cmd = f'python main.py --natural --normal --last_layer --orthogonal_loss --use_valid --seed {seed}'
@@ -25,14 +25,14 @@ for seed in range(3):
 
     os.system(cmd + f' --pe_pos ')
     print(cmd + f' --pe_pos')
-'''
+
 ### gpt_augment
 datenames = ['wdc','rel-text','semi-text-w','semi-text-c']
 query_sizes = [1,2,4,8]
 num_att_layers = [1,2,3]
 head_nums = [1,2,4,8]
 for datename in datenames:
-    for seed in range(1):
+    for seed in range(3):
         cmd = f'python main.py --natural --normal --last_layer --orthogonal_loss --gpt_aug --seed {seed} --data_name {datename}'
         for query_size in query_sizes:
             os.system(cmd + f' --query_size {query_size}')
