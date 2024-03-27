@@ -30,7 +30,7 @@ unzip natural.zip
 
 ## Run
 
-Default parameters are provided for quick and easy testing across all datasets:
+Default parameters (N=0,K=4) are provided for quick and easy testing across all datasets:
 
 ```
 python main.py --default

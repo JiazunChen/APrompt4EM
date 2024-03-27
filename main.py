@@ -118,37 +118,6 @@ def init_default_args(args):
     args.ort_ratio = 1
     args.head_num = 1
     args.k = 0.1
-    if args.data_type == 'wdc':
-        args.query_size = 16
-        args.num_att_layers = 3
-    if args.data_type=='google-amazon':
-        args.query_size = 1
-        args.grouped_parameters = True
-        args.head_num=2
-    if args.data_type == 'geo-heter':
-        args.head_num = 4
-        args.query_size = 2
-        args.pe_pos =  True
-    if args.data_type == 'rel-text':
-        args.grouped_parameters = True
-        args.head_num =  1
-        args.query_size = 2
-    if args.data_type == 'semi-homo':
-        args.query_size =2
-        args.head_num = 4
-        args.pe_pos = True
-    if args.data_type == 'semi-text-w':
-        args.query_size = 1
-        args.pe_pos =  True
-    if args.data_type == 'semi-text-c':
-        args.query_size = 4
-        args.num_att_layers = 2
-    if  args.data_type == 'semi-rel':
-        args.query_size = 4
-        args.head_num = 1
-    if  args.data_type == 'semi-heter':
-        args.query_size = 4
-        args.head_num = 1
 
 if __name__ == '__main__':
     if not os.path.exists('./result_model'):
