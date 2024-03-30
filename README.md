@@ -22,7 +22,7 @@ Please note that you **do not** need to install `OpenPrompt` using `pip` manuall
 
 We utilize twelve real-world benchmark datasets with varying structures, sourced from [Machamp](https://github.com/megagonlabs/machamp) and [WDC](https://webdatacommons.org/largescaleproductcorpus/wdc-products/).
 
-The processed natural language datasets are stored in `./data/natural/`. Before first use, it is necessary to unzip them:
+The processed natural language datasets (including 4 gpt augmented datasets) are stored in `./data/natural/`. Before first use, it is necessary to unzip them:
 ```
 cd ./data/natural
 unzip natural.zip
