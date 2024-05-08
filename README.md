@@ -1,6 +1,6 @@
 # APrompt4EM
 
-This is the code for the VLDB24 submission titled "APrompt4EM: Augmented Prompt for GEM with Contextualized Soft Token and Information Supplementation," based on the source codes from [PromptEM](https://github.com/ZJU-DAILY/PromptEM).
+This is the code for  "APrompt4EM: Augmented Prompt for GEM with Contextualized Soft Token and Information Supplementation," based on the source codes from [PromptEM](https://github.com/ZJU-DAILY/PromptEM).
 
 ## Quick Start
 
